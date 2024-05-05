@@ -1,0 +1,224 @@
+/* Original styles */
+
+/* Add this line in your HTML file: <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+@keyframes boom {
+    from {
+        transform: translateX(-1700px);
+    }
+    to {
+        transform: translateX(-303px);
+    }
+}
+
+@keyframes boom2 {
+    from {
+        transform: translateX(-1700px);
+    }
+    to {
+        transform: translateX(-300px);
+    }
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+h1 {
+    color: #67BBAD;
+    position: absolute;
+    left: 20%;
+    font-size: 45px;
+    background-color: rgb(49, 49, 49);
+    top: 30%;
+    left: 50%;
+    animation: boom2 1.9s ease-in 1s both;
+    border-radius: 20px;
+}
+
+.beg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img {
+    width: 690px;
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    height: 670px;
+    position: absolute;
+    top: 30%;
+    margin-bottom: 100px;
+    left: 50%;
+    animation: boom 2s ease-in-out 1s both;
+}
+
+.img:hover {
+    margin-left: -695px;
+    transition: all 1.2s ease;
+}
+
+h2 {
+    color: #67BBAD;
+    margin-left: 90px;
+    font-size: 30px;
+}
+
+#vv {
+    border-radius: 8px;
+    background-color: #67BBAD;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#vv:hover {
+    transform: scale(1.8);
+    transition: all 0.9s ease;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    height: 40px;
+    background: #000000;
+}
+
+.nav ul {
+    margin: 60px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    float: right;
+    display: block;
+    padding: 10px 50px;
+    color: white;
+}
+
+.nav ul li a:hover {
+    color: #00ff2a;
+    transform: scale(1.8);
+    transition: all 0.9s ease;
+    transition: all 0.9s ease-out;
+}
+
+p {
+    color: #67BBAD;
+    margin-left: 90px;
+    font-size: 30px;
+}
+
+.nav ul li a:active {
+    background-color: #00ff2a;
+}
+
+#nn {
+    background-color: #64d376;
+    border-radius: 10px;
+    width: 10px;
+}
+
+#nn:hover {
+    color: #ffffff;
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    transition: all 0.5s ease;
+    font-size: 50px;
+}
+
+.number:hover {
+    transform: scale(1.8);
+    transition: all 0.9s ease;
+    color: #dc2743;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 30px;
+    }
+    .img {
+        width: 400px;
+        height: 400px;
+        margin-left: -800px;
+        margin-top: 50px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .nav ul {
+        margin: 20px;
+    }
+    .nav ul li a {
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    h1 {
+        font-size: 20px;
+        left: 10%;
+    }
+    .img {
+        width: 250px;
+        height: 250px;
+        margin-left: -625px;
+        margin-top: 50px;
+    }
+    h2 {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    p {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .nav ul {
+        margin: 10px;
+    }
+    .nav ul li a {
+        padding: 10px;
+    }
+}
